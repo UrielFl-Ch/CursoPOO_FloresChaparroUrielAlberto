@@ -7,15 +7,16 @@
  *
  * @author Pc
  */
-public class Pelicula {
+import java.io.Serializable;
+
+public class Pelicula implements Serializable {
     private final String nombre;
-    
+
     public Pelicula(String nombre) {
         this.nombre = nombre;
     }
-    
-    public String getNombre(){
+
+    public String getNombre() {
         return nombre;
     }
-    
 }
