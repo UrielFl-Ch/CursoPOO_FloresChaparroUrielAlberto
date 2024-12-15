@@ -13,12 +13,12 @@ import java.util.ArrayList;
 public class Venta implements Serializable {
     private final ArrayList<Sala> salas;
 
-    public Venta() {
+    public Venta() { // Variables.
         salas = new ArrayList<>();
         salas.add(new Sala("Normal"));
         salas.add(new Sala("3D"));
     }
-
+// Calcula el precio con los siguientes atributos.
     public double calcularPrecio(int categoria, String tipoSala, boolean esMiércoles, boolean esAntesDeLas18) {
         double precio = 0.0;
         if (tipoSala.equals("3D")) {
