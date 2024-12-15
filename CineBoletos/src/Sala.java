@@ -9,27 +9,27 @@
  */
 import java.io.Serializable;
 
-public class Sala implements Serializable {
-    private final String tipo;
+public class Sala implements Serializable { // Definicion de clase sala
+    private final String tipo; // Variables
     private int boletosVendidos;
     private double totalRecaudado;
 
-    public Sala(String tipo) {
+    public Sala(String tipo) {  //Constructor 
         this.tipo = tipo;
-        this.boletosVendidos = 0;
+        this.boletosVendidos = 0;  //inicializacion de variables
         this.totalRecaudado = 0.0;
     }
 
     public void venderBoleto(double precio) {
-        boletosVendidos++;
+        boletosVendidos++;  // invrementa el valor de boletos vendidoa
         totalRecaudado += precio;
     }
 
     public int getBoletosVendidos() {
-        return boletosVendidos;
+        return boletosVendidos; //devuelve el valor de la variable.
     }
 
-    public double getTotalRecaudado() {
+    public double getTotalRecaudado() { //Devuelve el valor de esa variable.
         return totalRecaudado;
     }
 
